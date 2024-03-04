@@ -21,6 +21,7 @@ Welcome to the Natural Burial repository, a resource hub for eco-conscious buria
   ```
   
 ## Contributors: 
+Special thanks to all our contributors for their valuable contributions and dedication to our project. Your efforts help make our project better every day!
 - **Mac** :
   - Backend
   - Frontend
