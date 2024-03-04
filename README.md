@@ -9,6 +9,8 @@ Welcome to the Natural Burial repository, a resource hub for eco-conscious buria
   - JavaScript
 - **Other Resources**:
   - Colorhunt.co
+  - Node.js
+  - MongoDB Atlas
 
 ## Getting Started
 - Cloning repository:
