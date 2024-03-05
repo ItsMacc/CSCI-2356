@@ -11,7 +11,8 @@ function (event) {
     const inputs = [];
 
     for (let i = 0; i < input_list.length; i++) {
-        inputs.push(input_list[i].value)
+        inputs.push(input_list[i].value);
+        input_list[i].value = "";
     }
 
     console.log(inputs);
