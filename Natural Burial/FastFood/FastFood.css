@@ -68,6 +68,7 @@ Designed by: Aakarshan Khosla
 
 .big-card.selected {
     .card-img{
+        transition: border .15s ;
         border: 4px solid rgb(0, 0, 255);
     }
 }
@@ -102,6 +103,11 @@ Designed by: Aakarshan Khosla
     cursor: pointer;
     width: 100%;
     font-size: 72px;
+    transition: background-color .5s;
+}
+
+.toggle-btn:hover {
+    background-color: #ccc /* Change background color on hover */
 }
 
 .dropdown-options{
