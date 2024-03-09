@@ -100,6 +100,7 @@ Designed by: Aakarshan Khosla
     border: 2px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
     font-size: 72px;
 }
 
