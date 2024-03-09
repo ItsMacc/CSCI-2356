@@ -20,7 +20,7 @@
         <div class="card-text">
             <button type="button" class="btn-select">SELECT</button>
             <button type="button" class="play-audio">
-                <svg xmlns="http://www.w3.org/2000/svg" width="" height="70%" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
                     <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z"/>
                     <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"/>
                   </svg>
@@ -31,13 +31,18 @@
     <br><br>
 
     <div class="dropdown">
-        <select name="options" id="">
-            <option value=" " disabled selected hidden></option>
-            <option value="Option 1">Option 1</option>
-            <option value="Option 2">Option 2</option>
-            <option value="Option 3">Option 3</option>
-        </select>
+        <button type="button" class="toggle-btn" id="toggle-btn">
+            Select option
+        </button>
+        <div class="dropdown-options" id="dropdown-options">
+            <div class="option" data-value="1">Option 1</div>
+            <div class="option" data-value="2">Option 2</div>
+            <div class="option" data-value="3">Option 3</div>
+        </div>
     </div>
 
+    <br><br>
+    
+    <script src="../FastFood.js"></script>
 </body>
 </html>
