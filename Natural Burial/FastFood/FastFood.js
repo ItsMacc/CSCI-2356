@@ -42,18 +42,20 @@ document.addEventListener("DOMContentLoaded", function (){
 * This script enhances user interaction by indicating which card has been selected. 
 * It ensures that at most, only one card can be selected among multiple cards.
 */
-const cards = document.querySelectorAll(".big-card");
+const btnSelects = document.querySelectorAll(".big-card .btn-select");
 
-cards.forEach(function(card) {
-card.addEventListener('click', function() {
-  // Remove selected class from all cards
-  cards.forEach(function(c) {
-    if (c !== card) {
-        c.classList.remove('selected');
-    }
-  });
-  
-  // Add selected class to the clicked card
-  card.classList.add('selected');
-  });
+btnSelects.forEach(function(btnSelect) {
+    btnSelect.addEventListener('click', function() {
+        const parentCard = btnSelect.closest('.big-card');
+        
+        // Remove selected class from all cards
+        document.querySelectorAll(".big-card").forEach(function(card) {
+            if (card !== parentCard) {
+                card.classList.remove('selected');
+            }
+        });
+        
+        // Add selected class to the parent card of the clicked button
+        parentCard.classList.add('selected');
+    });
 });
