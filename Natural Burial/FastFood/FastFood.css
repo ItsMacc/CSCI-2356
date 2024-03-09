@@ -79,3 +79,44 @@ Designed by: Aakarshan Khosla
 }
 /*------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------*/
+
+
+/* -----------------------CSS for dropdown--------------------- */
+.dropdown{
+    position: relative;
+    display: inline-block;
+    font-size: 72px;
+}
+
+.toggle-btn{
+    background-color: #ffffff;
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 72px;
+}
+
+.dropdown-options{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+
+#dropdown-options{
+    display: none;
+}
+
+.option {
+    width: auto;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
