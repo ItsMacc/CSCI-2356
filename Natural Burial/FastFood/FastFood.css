@@ -107,7 +107,7 @@ Designed by: Aakarshan Khosla
 }
 
 .toggle-btn:hover {
-    background-color: #ccc /* Change background color on hover */
+    background-color: #ccc;
 }
 
 .dropdown-options{
