@@ -10,6 +10,7 @@ Designed by: Aakarshan Khosla
 
 
 /* -----------------------CSS for big-card--------------------- */
+
 .big-card {
     display: flex;
     flex-direction: column;
@@ -72,23 +73,18 @@ Designed by: Aakarshan Khosla
         border: 6px solid rgb(0, 0, 255);
     }
 }
-/*------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------*/
-
-
 
 /* -----------------------CSS for input--------------------- */
+
 .text-input{
     border-radius: 10px;
     border: 4px solid ;
     font-size: 72px;
     width: 50%;
 }
-/*------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------*/
-
 
 /* -----------------------CSS for dropdown--------------------- */
+
 .dropdown{
     position: relative;
     display: inline-block;
