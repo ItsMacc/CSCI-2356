@@ -1,0 +1,49 @@
+/*
+    The purpose of this css file is to style the components
+    of the form, keeping in mind the preferences of our client
+*/
+
+*{
+    font-size: 2.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: rgb(179, 212, 152);
+}
+
+#form-box{
+    width: 95%;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: antiquewhite;
+}
+
+input{
+    border: 2px solid blue;
+    border-radius: 4px;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="radio"]{
+    border: 0px;
+    height: 100px;
+}
+
+select{
+    width: 100%;
+}
+
+option{
+    font-size: 7px;
+}
+
+#image{
+    height: 100%;
+    width: 511px;
+}
