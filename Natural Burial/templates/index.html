@@ -17,14 +17,16 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-center">
                 <label for="name">Name</label>
-                <input type="text" id="name" autocomplete="off">
+                <input type="text" id="name" autocomplete="off" required>
 
                 <label for="phoneNum">Phone Number</label>
-                <input type="number" id="phoneNum" class="appearance-none">
+                <input type="number" inputmode="numeric" id="phoneNum" class="appearance-none" required>
 
                 <label for="dropdown">Choose Container</label>
                 <div class="relative inline-block mt-auto mb-auto" id="dropdown">
-                    <select class="block appearance-none text-center bg-white border-2 border-[#0000FF] hover:border-[#000000] px-4 py-2 pr-4 rounded">
+                    <select class="block appearance-none text-center 
+                    bg-white border-2 border-[#0000FF] hover:border-[#000000] 
+                    px-4 py-2 pr-4 rounded" required>
                         <option hidden selected disabled>Select</option>
                         <option>Casket</option>
                         <option>Burial Shroud</option>
@@ -39,25 +41,26 @@
             
                 <div class="flex flex-col justify-self-center">
                     <img id="image" src="../static/images/flat marker.jpg" alt="flat marker">
-                    <input class="mt-2" type="radio" name="options" value="flat marker">
+                    <input class="mt-2" type="radio" name="options" value="flat marker" required>
                 </div>
                 <div class="flex flex-col justify-self-center">
                     <img id="image" src="../static/images/natural marker.jpg" alt="natural marker">
-                    <input class="mt-2" type="radio" name="options" value="natural marker">
+                    <input class="mt-2" type="radio" name="options" value="natural marker" required>
                 </div>
             
                 <div class="flex flex-col justify-self-center">
                     <img id="image" src="../static/images/tree marker.jpg" alt="tree marker">
-                    <input class="mt-2" type="radio" name="options" value="tree marker">
+                    <input class="mt-2" type="radio" name="options" value="tree marker" required>
                 </div>
                 <div class="flex flex-col justify-self-center">
                     <img id="image" src="../static/images/upright monument.jpg" alt="upright monument">
-                    <input class="mt-2" type="radio" name="options" value="upright monument">
+                    <input class="mt-2" type="radio" name="options" value="upright monument" required>
                 </div>
             </div>
             
             <div>
-                <button class="bg-white border-2 border-[#000000] rounded p-1 hover:bg-[#f5f5dc]" type="submit">
+                <button class="bg-white border-2 border-[#000000] 
+                rounded p-1 hover:bg-[#f5f5dc]" type="submit">
                     SUBMIT
                 </button>
             </div>
