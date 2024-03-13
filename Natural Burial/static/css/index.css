@@ -4,7 +4,7 @@
 */
 
 *{
-    font-size: 2.3rem;
+    font-size: 3rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -45,5 +45,5 @@ option{
 
 #image{
     height: 100%;
-    width: 511px;
+    width: 20rem;
 }
