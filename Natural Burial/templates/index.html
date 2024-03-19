@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <!--Link to CSS files-->
     <link rel="stylesheet" href="../static/css/index.css">
 </head>
+
 <body>
     <form action="">
         <div class="flex items-center flex-col gap-4 mt-2 mb-2 p-4 rounded" id="form-box">
@@ -36,28 +38,45 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 mt-5 gap-5 justify-items-stretch w">
-                <div class="col-span-2 justify-self-center">Marker Options</div>
-            
-                <div class="flex flex-col justify-self-center">
-                    <img id="image" src="../static/images/flat marker.jpg" alt="flat marker">
-                    <input class="mt-2" type="radio" name="options" value="flat marker" required>
+            <div>Marker Options:</div>
+            <!-- Marker Options-sadikshya -->
+            <div class="flex flex-row justify-center flex-wrap mt-2 mb-2 p-4 rounded">
+                <div class="card m-4 border-2 border-black p-1 rounded">
+                    <img class="image rounded" src="/Natural Burial/static/images/stone.jpeg" alt="Wooden Cross">
+                    <p class="mb-2">bdhjfbjherbgkejrn</p>
+                    <div class="radio-button">
+                        <input type="radio" name="options" value="flat marker" required>
+                    </div>
                 </div>
-                <div class="flex flex-col justify-self-center">
-                    <img id="image" src="../static/images/natural marker.jpg" alt="natural marker">
-                    <input class="mt-2" type="radio" name="options" value="natural marker" required>
+
+                <div class="card m-4 border-2 border-black p-1 rounded">
+                    <img class="image rounded" src="/Natural Burial/static/images/stone.jpeg" alt="Stone Engraved">
+                    <p class="mb-2">bdhjfbjherbgkejrn</p>
+                    <div class="radio-button">
+                        <input type="radio" name="options" value="natural marker" required>
+                    </div>
                 </div>
-            
-                <div class="flex flex-col justify-self-center">
-                    <img id="image" src="../static/images/tree marker.jpg" alt="tree marker">
-                    <input class="mt-2" type="radio" name="options" value="tree marker" required>
+
+                <div class="card m-4 border-2 border-black p-1 rounded">
+                    <img class="image rounded" src="/Natural Burial/static/images/stone.jpeg" alt="Memorial Plaque">
+                    <p class="mb-2">bdhjfbjherbgkejrn</p>
+                    <div class="radio-button">
+                        <input type="radio" name="options" value="Plaque marker" required>
+                    </div>
                 </div>
-                <div class="flex flex-col justify-self-center">
-                    <img id="image" src="../static/images/upright monument.jpg" alt="upright monument">
-                    <input class="mt-2" type="radio" name="options" value="upright monument" required>
+
+                <div class="card m-4 border-2 border-black p-1 rounded">
+                    <img class="image rounded" src="/Natural Burial/static/images/stone.jpeg"
+                        alt="Memorial Plaque on tree">
+                    <p class="mb-2">ytdthgfvjhgujh</p>
+                    <div class="radio-button">
+                        <input type="radio" name="options" value="option1" required>
+                    </div>
+
+                    <!-- <input type="radio" class="radio-button" name="options" value="engarved marker" required> -->
                 </div>
             </div>
-            
+
             <div>
                 <button class="bg-white border-2 border-[#000000] 
                 rounded p-1 hover:bg-[#f5f5dc]" type="submit">
@@ -68,4 +87,5 @@
 
     </form>
 </body>
+
 </html>
