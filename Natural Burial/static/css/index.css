@@ -12,8 +12,8 @@
 }
 
 /*
-CSS by Sadikshya Oli
-This CSS defines the styles for marker options
+    CSS by Sadikshya Oli
+    This CSS defines the styles for marker options
 */
 
 /* Style for icons */
@@ -59,4 +59,60 @@ This CSS defines the styles for marker options
 
 .burial-option .radio>input[type="radio"]{
     transform:scale(5); /*Increasing the size of the radio button*/
+}
+
+/*
+    CSS by Aakarshan Khosla
+    This CSS defines the style for favourite quote/ inscription
+*/
+
+input{
+    border: 2px solid blue; /* Visible border */
+    border-radius: 4px;
+}
+
+/*
+    CSS by Aarav Sen Mehta
+    This CSS defines the style for grave location
+*/
+
+.grave-location .card {
+    height: 90%;/*Initilizes the height for our card*/
+}
+
+.grave-location .pic {
+    width: 60%;
+}
+
+.grave-location .pic img {
+    height: 100%;
+    width: 100%;
+}
+
+.grave-location .heading{
+    height: fit-content;
+}
+
+.grave-location .desc {
+    width: 40%;
+    background-color: #def2cc;
+}
+
+/*Sets the height and width for the radio button*/
+.grave-location .radio input[type="radio"] {
+    width: 2rem;
+    height: 2rem;
+}
+
+.grave-location .sub-text {
+    height: 70%;
+}
+
+.grave-location .sub-text *{
+    font-size: 1.2rem;/*Sets the font size for the text that includes the description */
+}
+
+.grave-location .desc .interactive-section {
+    align-items:end; /*Aligns the button and the radio button*/
+    height: 30%;
 }
