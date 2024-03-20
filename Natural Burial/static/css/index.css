@@ -8,12 +8,6 @@ CSS by Sadikshya Oli
 This CSS defines the stly for marker options
 */
 
-/* Style for radio buttons */
-input[type="radio"] {
-    height: 70px;
-    width: 50px;
-}
-
 /* Style for icons */
 .icon {
     width: 2rem;
