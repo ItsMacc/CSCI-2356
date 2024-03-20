@@ -1,0 +1,26 @@
+* {
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*
+CSS by Sadikshya Oli
+This CSS defines the styles for marker options
+*/
+
+/* Style for icons */
+.marker-option .icon {
+    width: 2rem;
+    line-height: 1rem;
+}
+
+/*Style for the text-base in paragraph*/
+.marker-option .text-base {
+    font-size: 1.5rem;
+}
+
+/* Style for radio buttons within elements with class 'radio' */
+.marker-option .card .radio input[type="radio"] {
+    height: 80%;
+    width: 2rem;
+}
