@@ -3,6 +3,11 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body{
+    background-color: rgb(179, 212, 152);
+}
+
+/* CSS for form box */
 .form-box{
     width: 95%;
     margin-left: auto;
