@@ -8,7 +8,12 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/*
+    CSS by Aakarshan Khosla
+    This CSS defines the style for favourite quote/ inscription
+*/
+
 input{
-    border: 2px solid blue;
+    border: 2px solid blue; /* Visible border */
     border-radius: 4px;
 }
