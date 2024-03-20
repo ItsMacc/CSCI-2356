@@ -16,83 +16,88 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 </head>
 
 <body>
+    <!-- Marker Options [Sadikshya Oli] 
+        This HTML content conatins four cards containing information regardingfor burial options -->
+    <div class="heading text-center"> Marker Options </div>
 
-
-    <div>Marker Options:</div>
-    <!-- Marker Options-sadikshya -->
-    <div class="flex flex-row justify-center flex-wrap mt-2 mb-2 p-4 rounded">
-        <div class="card m-4 border-2 border-black p-1 rounded">
-            <div>
-                <img class="image rounded w-54 h-44" src="/Natural Burial/static/images/woodenmemorialcross.jpg"
+    <div class="flex flex-row justify-center flex-wrap mb-2 p-4 rounded">
+        <!--This card contains wooden memorial cross as marker option -->
+        <div class="card m-4 h-[18rem] w-[14rem] border-2 border-black p-1 rounded">
+            <div class="image">
+                <img class="rounded w-full h-44" src="/Natural Burial/static/images/woodenmemorialcross.jpg"
                     alt="Wooden Cross">
             </div>
-
-            <!-- <p class="mb-2 justify-center items-center">
-                        This is a wooden cross used for memorial purposes.
-                        <i class="fa-solid fa-microphone microphone" class="bar"></i>
-                    </p> -->
-            <div class="container">
-                <p class="mb-2 justify-center items-center">
+            <div class="container flex justify-between items-center">
+                <p class="text-base">
                     This is a wooden cross used for memorial purposes.
                 </p>
-
-            </div>
-            <!-- <div class="radio-button">
-                        <input type="radio" name="options" value="flat marker" required>
-                        <div class="mic-container">
-                            <i class="fa-solid fa-microphone microphone"></i>
-                        </div>
-                    </div> -->
-            <div class="radio h-8">
-                <input type="radio" name="burial-option-selected">
-                <i class="fa-solid fa-microphone microphone"></i>
             </div>
 
+            <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
+                <input type="radio" name="radio-button">
+                <button class="icon hover:bg-[#e9ab78] rounded-full">
+                    <i class="fa-solid fa-microphone text-2xl microphone"></i>
+                </button>
+            </div>
         </div>
-
-        <div class="card m-4 border-2 border-black p-1 rounded">
+        <!--This card contains Stone Engraved as marker option -->
+        <div class="card h-[18rem] w-[14rem] m-4 border-2 border-black p-1 rounded">
             <div>
-                <img class="image rounded w-54 h-44" src="/Natural Burial/static/images/stonemarker.jpeg"
+                <img class="image rounded w-full h-44" src="/Natural Burial/static/images/stonemarker.jpeg"
                     alt="Stone Engraved">
             </div>
-            <p class="mb-2">
-                This is engraved stone marker for natural burial.
-            </p>
-
-            <div class="radio-button">
-                <input type="radio" name="options" value="natural marker" required>
+            <div class="container flex justify-between items-center">
+                <p class="text-base">
+                    This is engraved stone marker for natural burial.
+                </p>
             </div>
-        </div>
+            <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
+                <input type="radio" name="radio-button">
+                <button class="icon hover:bg-[#e9ab78] rounded-full">
+                    <i class="fa-solid fa-microphone text-2xl microphone"></i>
+                </button>
+            </div>
 
-        <div class="card m-4 border-2 border-black p-1 rounded">
+        </div>
+        <!--This card contains wooden memorial plaque as marker option -->
+        <div class="card h-[18rem] w-[14rem] m-4 border-2 border-black p-1 rounded">
             <div>
-                <img class="image rounded h-44" src="/Natural Burial/static/images/woodenplaque.jpeg"
+                <img class="image rounded w-full h-44" src="/Natural Burial/static/images/woodenplaque.jpeg"
                     alt="Wooden Memorial Plaque">
             </div>
-            <p class="mb-2">This is a standing wooden plaque for natural burial identification.
-            </p>
-            <div class="mic-container">
-                <i class="fa-solid fa-microphone microphone"></i>
+            <div class="container flex justify-between items-center">
+                <p class="text-base">This is a standing wooden plaque for natural burial.
+                </p>
             </div>
-            <div class="radio-button">
-                <input type="radio" name="options" value="Plaque marker" required>
-            </div>
-        </div>
 
-        <div class="card m-4 border-2 border-black p-1 rounded">
+            <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
+                <input type="radio" name="radio-button">
+                <button class="icon hover:bg-[#e9ab78] rounded-full">
+                    <i class="fa-solid fa-microphone text-2xl microphone"></i>
+                </button>
+            </div>
+
+        </div>
+        <!--This card contains memorial plaque on tree as marker option -->
+        <div class="card h-[18rem] w-[14rem] m-4 border-2 border-black p-1 rounded">
             <div>
-                <img class="image  w-54 h-44 rounded" src="/Natural Burial/static/images/treemarker.jpeg"
+                <img class="image w-full h-44 rounded" src="/Natural Burial/static/images/treemarker.jpeg"
                     alt="Memorial Plaque on tree">
             </div>
-            <p class="mb-2">This is a wooden board pinned at tree for identification. </p>
-            <div class="radio-button">
-                <input type="radio" name="options" value="option1" required>
+            <div class="container flex justify-between items-center">
+                <p class="text-base">This is a wooden board pinned at tree for identification. </p>
             </div>
+
+            <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
+                <input type="radio" name="radio-button">
+                <button class="icon hover:bg-[#e9ab78] rounded-full ">
+                    <i class="fa-solid fa-microphone text-2xl microphone"></i>
+                </button>
+            </div>
+
         </div>
     </div>
 
