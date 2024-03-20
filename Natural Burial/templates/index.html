@@ -26,7 +26,14 @@
                 <input type="text" id="name" autocomplete="off" required>
 
                 <label for="phoneNum">Phone Number</label>
-                <input type="number" inputmode="numeric" id="phoneNum" class="appearance-none" required>    
+                <input type="number" inputmode="numeric" id="phoneNum" class="appearance-none" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date">
+
+                <label for="places"># of Places</label>
+                <input type="number" inputmode="numeric" id="places" class="appearance-none" required>
+
             </div>
 
             <br>
@@ -39,7 +46,8 @@
 
             <div class="marker-option flex flex-row justify-center flex-wrap mb-2 p-4 rounded gap-5">
                 <!--This card contains wooden memorial cross as marker option -->
-                <div class="card m-4 h-[22rem] w-[18rem] border-2 border-black p-1 rounded flex flex-col justify-between">
+                <div
+                    class="card bg-[#def2cc] m-4 h-[22rem] w-[18rem] border-2 border-black p-1 rounded flex flex-col justify-between">
                     <div class="image">
                         <img class="rounded w-full h-44" src="/Natural Burial/static/images/woodenmemorialcross.jpg"
                             alt="This is a wooden cross used for memorial purposes.">
@@ -58,7 +66,8 @@
                     </div>
                 </div>
                 <!--This card contains Stone Engraved as marker option -->
-                <div class="card h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
+                <div
+                    class="card bg-[#def2cc] h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
                     <div>
                         <img class="image rounded w-full h-44" src="/Natural Burial/static/images/stonemarker.jpeg"
                             alt="This is engraved stone marker for natural burial.">
@@ -77,7 +86,8 @@
 
                 </div>
                 <!--This card contains wooden memorial plaque as marker option -->
-                <div class="card h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
+                <div
+                    class="card bg-[#def2cc] h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
                     <div>
                         <img class="image rounded w-full h-44" src="/Natural Burial/static/images/woodenplaque.jpeg"
                             alt="This is a standing wooden plaque for natural burial.">
@@ -96,7 +106,8 @@
 
                 </div>
                 <!--This card contains memorial plaque on tree as marker option -->
-                <div class="card h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
+                <div
+                    class="card bg-[#def2cc] h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
                     <div>
                         <img class="image w-full h-44 rounded" src="/Natural Burial/static/images/treemarker.jpeg"
                             alt="This is a wooden board pinned at tree for identification.">
@@ -135,12 +146,13 @@
                     <hr>
 
                     <div class="image w-full p-4 rounded-lg">
-                        <img src="../static/images/treepod.webp" alt="biodegradable burial method that converts body into tree"
-                        class="h-full w-full rounded-lg">
+                        <img src="../static/images/treepod.webp"
+                            alt="biodegradable burial method that converts body into tree"
+                            class="h-full w-full rounded-lg">
                     </div>
 
                     <div class="radio flex items-center justify-evenly pl-4">
-                        <input type="radio"  name="burial-option-selected">
+                        <input type="radio" name="burial-option-selected">
 
                         <button class="hover:bg-[#c3c3c3] w-16 rounded">
                             <i class="fa-solid fa-microphone microphone"></i>
@@ -152,15 +164,15 @@
                 -->
                 <div class="burial-option text-center rounded-lg">
                     <div class="heading">Shroud</div>
-                    
+
                     <hr>
 
                     <div class="image w-full p-4 rounded-lg">
                         <img src="../static/images/shroud.jpeg" alt="burial method where body is wrapped by clothes"
-                        class="h-full w-full rounded-lg">
+                            class="h-full w-full rounded-lg">
                     </div>
                     <div class="radio flex items-center justify-evenly pl-4">
-                        <input type="radio"  name="burial-option-selected">
+                        <input type="radio" name="burial-option-selected">
 
                         <button class="hover:bg-[#c3c3c3] w-16 rounded">
                             <i class="fa-solid fa-microphone microphone"></i>
@@ -177,10 +189,10 @@
                     <hr>
                     <div class="image p-4 rounded-lg">
                         <img src="../static/images/Ecoffins.jpeg" alt="burial method where body is wrapped by clothes"
-                        class="h-full w-full rounded-lg">
+                            class="h-full w-full rounded-lg">
                     </div>
                     <div class="radio flex items-center justify-evenly pl-4">
-                        <input type="radio"  name="burial-option-selected">
+                        <input type="radio" name="burial-option-selected">
 
                         <button class="hover:bg-[#c3c3c3] w-16 rounded">
                             <i class="fa-solid fa-microphone microphone"></i>
@@ -197,10 +209,10 @@
                     <hr>
                     <div class="image p-4 rounded-lg">
                         <img src="../static/images/casket.jpeg" alt="burial method where body is wrapped by clothes"
-                        class="h-full w-full rounded-lg">
+                            class="h-full w-full rounded-lg">
                     </div>
                     <div class="radio flex items-center justify-evenly pl-4">
-                        <input type="radio"  name="burial-option-selected">
+                        <input type="radio" name="burial-option-selected">
 
                         <button class="hover:bg-[#c3c3c3] w-16 rounded">
                             <i class="fa-solid fa-microphone microphone"></i>
@@ -210,14 +222,16 @@
             </div>
 
             <br>
-            
+
             <!-- 
                 Grave Location [Aarav Sen Mehta]
                 This HTML content contains details about
                 grave site location
             -->
             <div class="grave-location flex flex-col">
-
+                <div class="title text-center mb-3">
+                    Grave Site Location
+                </div>
                 <!-- grave location 1 -->
                 <div class="card flex flex-row rounded">
                     <!-- Cemetery Image -->
@@ -227,7 +241,7 @@
 
                     <!-- Description -->
                     <div class="desc border-l-8 border-white-500 flex flex-col p-1 ">
-                        
+
                         <!-- Cemetery Name -->
                         <div class="heading text-center">
                             Camp Hill Cemetery
@@ -236,15 +250,15 @@
                         <!-- Sub-text flex flex-col justify-center gap-3 -->
                         <div class="sub-text flex flex-col justify-center gap-3">
 
-                                <!-- Location -->
-                                <li>
-                                    <strong>Location:</strong> 1600 Summer St, Halifax, NS B3H 3A6
-                                </li>
+                            <!-- Location -->
+                            <li>
+                                <strong>Location:</strong> 1600 Summer St, Halifax, NS B3H 3A6
+                            </li>
 
-                                <!-- Social Phone Number -->
-                                <li><strong> Phone Number:</strong> <a href="tel:1234567890"
-                                        class="text-black-500 hover:text-blue-700">123-456-7890</a>
-                                </li>
+                            <!-- Social Phone Number -->
+                            <li><strong> Phone Number:</strong> <a href="tel:1234567890"
+                                    class="text-black-500 hover:text-blue-700">123-456-7890</a>
+                            </li>
                         </div>
 
                         <!-- Interactive Section -->
@@ -253,8 +267,8 @@
                             <!-- Voice Button -->
                             <div class="voice-button">
                                 <button type="button" class="btn btn-primary ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem" fill="currentFill"
-                                        class="bi bi-mic-fill " viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem"
+                                        fill="currentFill" class="bi bi-mic-fill " viewBox="0 0 16 16">
                                         <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z" />
                                         <path
                                             d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5" />
@@ -311,8 +325,8 @@
                             <!-- Voice Button -->
                             <div class="voice-button ">
                                 <button type="button" class="btn btn-primary ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem" fill="currentFill"
-                                        class="bi bi-mic-fill " viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem"
+                                        fill="currentFill" class="bi bi-mic-fill " viewBox="0 0 16 16">
                                         <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z" />
                                         <path
                                             d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5" />
@@ -336,7 +350,7 @@
 
                 <!-- grave location 3 -->
                 <div class="card flex flex-row rounded">
-                    
+
                     <!-- Cemetery Image -->
                     <div class="pic rounded-l-lg">
                         <img class="rounded-l-lg" src="../static/images/location_MtHermon.jpg" alt="flat marker">
@@ -344,7 +358,7 @@
 
                     <!-- Description -->
                     <div class="desc border-l-8 border-white-500 flex flex-col p-1 ">
-                        
+
                         <!-- Cemetery Name -->
                         <div class="heading text-center">
                             Mount Hermon Cemetery
@@ -352,7 +366,7 @@
 
                         <!-- Sub-text flex flex-col justify-center gap-3 -->
                         <div class="sub-text flex flex-col justify-center gap-3">
-                            <li><strong>Location:</strong> 
+                            <li><strong>Location:</strong>
                                 1801 Chem. Saint-Louis, Québec, QC G1S 1H6
                             </li>
                             <li><strong> Phone Number:</strong> <a href="tel:1234567890"
@@ -366,8 +380,8 @@
                             <!-- Voice Button -->
                             <div class="voice-button button-black-500 hover:button-blue-700">
                                 <button type="button" class="btn btn-primary ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem" fill="currentFill"
-                                        class="bi bi-mic-fill " viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem"
+                                        fill="currentFill" class="bi bi-mic-fill " viewBox="0 0 16 16">
                                         <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z" />
                                         <path
                                             d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5" />
@@ -387,7 +401,7 @@
                 </div>
 
                 <br>
-                
+
                 <!-- grave location 4 -->
                 <div class="card flex flex-row rounded">
 
@@ -398,7 +412,7 @@
 
                     <!-- Description -->
                     <div class="desc border-l-8 border-white-500 flex flex-col p-1 ">
-                        
+
                         <!-- Cemetery Name -->
                         <div class="heading text-center">
                             Saint Peter’s Cemetery
@@ -409,7 +423,7 @@
 
                             <!-- Location -->
                             <li><strong>Location:</strong> Murphy Cove, NS B0J 3H0</li>
-                            
+
                             <!-- Social Phone Number -->
                             <li><strong> Phone Number:</strong> <a href="tel:1234567890"
                                     class="text-black-500 hover:text-blue-700">123-456-7890</a>
@@ -422,8 +436,8 @@
                             <!-- Voice Button -->
                             <div class="voice-button ">
                                 <button type="button" class="btn btn-primary ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="currentFill"
-                                        class="bi bi-mic-fill " viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem"
+                                        fill="currentFill" class="bi bi-mic-fill " viewBox="0 0 16 16">
                                         <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z" />
                                         <path
                                             d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5" />
@@ -452,8 +466,22 @@
                 enter their inscription.
             -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-center mb-5">
-                <label class="mr-2" for="inscription">Favourite Quote: </label>
-                <input type="text" id="inscription" autocomplete="off" required>
+                <div class="quote flex justify-center items-center">
+                    <label class="mr-2" for="inscription">Favourite Quote: </label>
+                </div>
+                <textarea name="" id="inscription" rows="3"></textarea>
+            </div>
+
+            <br>
+
+            <!--
+                Submit area
+            -->
+            <div class="form-submit text-center">
+                <button class="bg-white border-2 border-[#000000] 
+                rounded p-1 hover:bg-[#f5f5dc]" type="submit">
+                    SUBMIT
+                </button>
             </div>
         </form>
     </div>

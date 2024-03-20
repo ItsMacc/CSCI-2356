@@ -97,8 +97,8 @@ input{
     This CSS defines the style for grave location
 */
 
-.grave-location .card {
-    height: 90%;/*Initilizes the height for our card*/
+.grave-location .card{
+    height: 20rem;
 }
 
 .grave-location .pic {
