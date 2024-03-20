@@ -31,12 +31,19 @@
         <br>
 
         <form action="">
+            <!--
+                This HTML content contains all the general information
+                that will be entered by the client.
+            -->
             <div class="general-info grid grid-cols-1 md:grid-cols-2 gap-5 text-center">
                 <label for="name">Name</label>
                 <input type="text" id="name" autocomplete="off" required>
 
                 <label for="phoneNum">Phone Number</label>
                 <input type="number" inputmode="numeric" id="phoneNum" class="appearance-none" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" autocomplete="off" required>
 
                 <label for="dob">Date of Birth</label>
                 <input type="date">
@@ -52,87 +59,88 @@
                 Marker Options [Sadikshya Oli]
                 This HTML content contains four cards containing information regardingfor burial options
             -->
-            <div class="heading text-center"> Marker Options </div>
+            <div class="marker-option flex flex-col">
+                <div class="heading text-center"> Marker Options </div>
 
-            <div class="marker-option flex flex-row justify-center flex-wrap mb-2 p-4 rounded gap-5">
-                <!--This card contains wooden memorial cross as marker option -->
-                <div
-                    class="card bg-[#def2cc] m-4 h-[22rem] w-[18rem] border-2 border-black p-1 rounded flex flex-col justify-between">
-                    <div class="image">
-                        <img class="rounded w-full h-44" src="../static/images/woodenmemorialcross.jpg"
-                            alt="This is a wooden cross used for memorial purposes.">
-                    </div>
-                    <div class="container flex justify-between items-center">
-                        <p class="text-base">
-                            This is a wooden cross used for memorial purposes.
-                        </p>
-                    </div>
+                <!--
+                    This div contains the layout for all the cards
+                -->
+                <div class="layout flex justify-center flex-wrap mb-2 p-4 rounded gap-5">
+                    <!--This card contains wooden memorial cross as marker option -->
+                    <div class="card bg-[#def2cc] m-4 h-[22rem] w-[18rem] border-2 border-black p-1 rounded flex flex-col justify-between">
+                        <div class="image">
+                            <img class="rounded w-full h-44" src="../static/images/woodenmemorialcross.jpg"
+                                alt="This is a wooden cross used for memorial purposes.">
+                        </div>
+                        <div class="container flex justify-between items-center">
+                            <p class="text-base">
+                                This is a wooden cross used for memorial purposes.
+                            </p>
+                        </div>
 
-                    <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
-                        <input type="radio" name="radio-button">
-                        <button class="icon hover:bg-[#e9ab78] rounded-full">
-                            <i class="fa-solid fa-microphone text-3xl microphone"></i>
-                        </button>
+                        <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
+                            <input type="radio" name="radio-button">
+                            <button type="button" class="icon hover:bg-[#e9ab78] rounded-full">
+                                <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <!--This card contains Stone Engraved as marker option -->
-                <div
-                    class="card bg-[#def2cc] h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
-                    <div>
-                        <img class="image rounded w-full h-44" src="../static/images/stonemarker.jpeg"
-                            alt="This is engraved stone marker for natural burial.">
-                    </div>
-                    <div class="container flex justify-between items-center">
-                        <p class="text-base">
-                            This is engraved stone marker for natural burial.
-                        </p>
-                    </div>
-                    <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
-                        <input type="radio" name="radio-button">
-                        <button class="icon hover:bg-[#e9ab78] rounded-full">
-                            <i class="fa-solid fa-microphone text-3xl microphone"></i>
-                        </button>
-                    </div>
+                    <!--This card contains Stone Engraved as marker option -->
+                    <div class="card bg-[#def2cc] h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
+                        <div>
+                            <img class="image rounded w-full h-44" src="../static/images/stonemarker.jpeg"
+                                alt="This is engraved stone marker for natural burial.">
+                        </div>
+                        <div class="container flex justify-between items-center">
+                            <p class="text-base">
+                                This is engraved stone marker for natural burial.
+                            </p>
+                        </div>
+                        <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
+                            <input type="radio" name="radio-button">
+                            <button type="button" class="icon hover:bg-[#e9ab78] rounded-full">
+                                <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                            </button>
+                        </div>
 
-                </div>
-                <!--This card contains wooden memorial plaque as marker option -->
-                <div
-                    class="card bg-[#def2cc] h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
-                    <div>
-                        <img class="image rounded w-full h-44" src="../static/images/woodenplaque.jpeg"
-                            alt="This is a standing wooden plaque for natural burial.">
                     </div>
-                    <div class="container flex justify-between items-center">
-                        <p class="text-base">This is a standing wooden plaque for natural burial.
-                        </p>
-                    </div>
+                    <!--This card contains wooden memorial plaque as marker option -->
+                    <div class="card bg-[#def2cc] h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
+                        <div>
+                            <img class="image rounded w-full h-44" src="../static/images/woodenplaque.jpeg"
+                                alt="This is a standing wooden plaque for natural burial.">
+                        </div>
+                        <div class="container flex justify-between items-center">
+                            <p class="text-base">This is a standing wooden plaque for natural burial.
+                            </p>
+                        </div>
 
-                    <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
-                        <input type="radio" name="radio-button">
-                        <button class="icon hover:bg-[#e9ab78] rounded-full">
-                            <i class="fa-solid fa-microphone text-3xl microphone"></i>
-                        </button>
-                    </div>
+                        <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
+                            <input type="radio" name="radio-button">
+                            <button type="button" class="icon hover:bg-[#e9ab78] rounded-full">
+                                <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                            </button>
+                        </div>
 
-                </div>
-                <!--This card contains memorial plaque on tree as marker option -->
-                <div
-                    class="card bg-[#def2cc] h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
-                    <div>
-                        <img class="image w-full h-44 rounded" src="../static/images/treemarker.jpeg"
-                            alt="This is a wooden board pinned at tree for identification.">
                     </div>
-                    <div class="container flex justify-between items-center">
-                        <p class="text-base">This is a wooden board pinned at tree for identification. </p>
-                    </div>
+                    <!--This card contains memorial plaque on tree as marker option -->
+                    <div class="card bg-[#def2cc] h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
+                        <div>
+                            <img class="image w-full h-44 rounded" src="../static/images/treemarker.jpeg"
+                                alt="This is a wooden board pinned at tree for identification.">
+                        </div>
+                        <div class="container flex justify-between items-center">
+                            <p class="text-base">This is a wooden board pinned at tree for identification. </p>
+                        </div>
 
-                    <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
-                        <input type="radio" name="radio-button">
-                        <button class="icon hover:bg-[#e9ab78] rounded-full ">
-                            <i class="fa-solid fa-microphone text-3xl microphone"></i>
-                        </button>
-                    </div>
+                        <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
+                            <input type="radio" name="radio-button">
+                            <button type="button" class="icon hover:bg-[#e9ab78] rounded-full ">
+                                <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                            </button>
+                        </div>
 
+                    </div>
                 </div>
             </div>
 
@@ -164,7 +172,7 @@
                     <div class="radio flex items-center justify-evenly pl-4">
                         <input type="radio" name="burial-option-selected">
 
-                        <button class="hover:bg-[#c3c3c3] w-16 rounded">
+                        <button type="button" class="hover:bg-[#c3c3c3] w-16 rounded">
                             <i class="fa-solid fa-microphone microphone"></i>
                         </button>
                     </div>
@@ -184,7 +192,7 @@
                     <div class="radio flex items-center justify-evenly pl-4">
                         <input type="radio" name="burial-option-selected">
 
-                        <button class="hover:bg-[#c3c3c3] w-16 rounded">
+                        <button type="button" class="hover:bg-[#c3c3c3] w-16 rounded">
                             <i class="fa-solid fa-microphone microphone"></i>
                         </button>
                     </div>
@@ -204,7 +212,7 @@
                     <div class="radio flex items-center justify-evenly pl-4">
                         <input type="radio" name="burial-option-selected">
 
-                        <button class="hover:bg-[#c3c3c3] w-16 rounded">
+                        <button type="button" class="hover:bg-[#c3c3c3] w-16 rounded">
                             <i class="fa-solid fa-microphone microphone"></i>
                         </button>
                     </div>
@@ -224,7 +232,7 @@
                     <div class="radio flex items-center justify-evenly pl-4">
                         <input type="radio" name="burial-option-selected">
 
-                        <button class="hover:bg-[#c3c3c3] w-16 rounded">
+                        <button type="button" class="hover:bg-[#c3c3c3] w-16 rounded">
                             <i class="fa-solid fa-microphone microphone"></i>
                         </button>
                     </div>
@@ -274,9 +282,9 @@
                         <!-- Interactive Section -->
                         <div class="interactive-section flex justify-evenly">
 
-                            <!-- Voice Button -->
+                            <!-- Voice Button type="button" -->
                             <div class="voice-button">
-                                <button type="button" class="btn btn-primary ">
+                                <button type="button" type="button" class="btn btn-primary ">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem"
                                         fill="currentFill" class="bi bi-mic-fill " viewBox="0 0 16 16">
                                         <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z" />
@@ -332,9 +340,9 @@
 
                         <div class="interactive-section flex justify-evenly">
 
-                            <!-- Voice Button -->
-                            <div class="voice-button ">
-                                <button type="button" class="btn btn-primary ">
+                            <!-- Voice Button type="button" -->
+                            <div class="voice-button type="button" ">
+                                <button type="button" type="button" class="btn btn-primary ">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem"
                                         fill="currentFill" class="bi bi-mic-fill " viewBox="0 0 16 16">
                                         <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z" />
@@ -387,9 +395,9 @@
                         <!-- Interactive Section -->
                         <div class="interactive-section flex justify-evenly">
 
-                            <!-- Voice Button -->
-                            <div class="voice-button button-black-500 hover:button-blue-700">
-                                <button type="button" class="btn btn-primary ">
+                            <!-- Voice Button type="button" -->
+                            <div class="voice-button type="button" button-black-500 hover:button-blue-700">
+                                <button type="button" type="button" class="btn btn-primary ">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem"
                                         fill="currentFill" class="bi bi-mic-fill " viewBox="0 0 16 16">
                                         <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z" />
@@ -443,9 +451,9 @@
                         <!-- Interactive Section -->
                         <div class="interactive-section flex justify-evenly">
 
-                            <!-- Voice Button -->
-                            <div class="voice-button ">
-                                <button type="button" class="btn btn-primary ">
+                            <!-- Voice Button type="button" -->
+                            <div class="voice-button type="button" ">
+                                <button type="button" type="button" class="btn btn-primary ">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem"
                                         fill="currentFill" class="bi bi-mic-fill " viewBox="0 0 16 16">
                                         <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z" />
@@ -488,7 +496,7 @@
                 Submit area
             -->
             <div class="form-submit text-center">
-                <button class="bg-white border-2 border-[#000000] 
+                <button type="submit" class="bg-white border-2 border-[#000000] 
                 rounded p-1 hover:bg-[#f5f5dc]" type="submit">
                     SUBMIT
                 </button>
