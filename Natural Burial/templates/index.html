@@ -19,87 +19,185 @@
 </head>
 
 <body>
-    <!-- 
-        Marker Options [Sadikshya Oli]
-        This HTML content contains four cards containing information regardingfor burial options
-    -->
-    <div class="heading text-center"> Marker Options </div>
+    <div class="form-box rounded">
+        <form action="">
+            <!-- 
+                Marker Options [Sadikshya Oli]
+                This HTML content contains four cards containing information regardingfor burial options
+            -->
+            <div class="heading text-center"> Marker Options </div>
 
-    <div class="marker-option flex flex-row justify-center flex-wrap mb-2 p-4 rounded gap-5">
-        <!--This card contains wooden memorial cross as marker option -->
-        <div class="card m-4 h-[22rem] w-[18rem] border-2 border-black p-1 rounded flex flex-col justify-between">
-            <div class="image">
-                <img class="rounded w-full h-44" src="/Natural Burial/static/images/woodenmemorialcross.jpg"
-                    alt="This is a wooden cross used for memorial purposes.">
-            </div>
-            <div class="container flex justify-between items-center">
-                <p class="text-base">
-                    This is a wooden cross used for memorial purposes.
-                </p>
+            <div class="marker-option flex flex-row justify-center flex-wrap mb-2 p-4 rounded gap-5">
+                <!--This card contains wooden memorial cross as marker option -->
+                <div class="card m-4 h-[22rem] w-[18rem] border-2 border-black p-1 rounded flex flex-col justify-between">
+                    <div class="image">
+                        <img class="rounded w-full h-44" src="/Natural Burial/static/images/woodenmemorialcross.jpg"
+                            alt="This is a wooden cross used for memorial purposes.">
+                    </div>
+                    <div class="container flex justify-between items-center">
+                        <p class="text-base">
+                            This is a wooden cross used for memorial purposes.
+                        </p>
+                    </div>
+
+                    <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
+                        <input type="radio" name="radio-button">
+                        <button class="icon hover:bg-[#e9ab78] rounded-full">
+                            <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                        </button>
+                    </div>
+                </div>
+                <!--This card contains Stone Engraved as marker option -->
+                <div class="card h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
+                    <div>
+                        <img class="image rounded w-full h-44" src="/Natural Burial/static/images/stonemarker.jpeg"
+                            alt="This is engraved stone marker for natural burial.">
+                    </div>
+                    <div class="container flex justify-between items-center">
+                        <p class="text-base">
+                            This is engraved stone marker for natural burial.
+                        </p>
+                    </div>
+                    <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
+                        <input type="radio" name="radio-button">
+                        <button class="icon hover:bg-[#e9ab78] rounded-full">
+                            <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                        </button>
+                    </div>
+
+                </div>
+                <!--This card contains wooden memorial plaque as marker option -->
+                <div class="card h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
+                    <div>
+                        <img class="image rounded w-full h-44" src="/Natural Burial/static/images/woodenplaque.jpeg"
+                            alt="This is a standing wooden plaque for natural burial.">
+                    </div>
+                    <div class="container flex justify-between items-center">
+                        <p class="text-base">This is a standing wooden plaque for natural burial.
+                        </p>
+                    </div>
+
+                    <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
+                        <input type="radio" name="radio-button">
+                        <button class="icon hover:bg-[#e9ab78] rounded-full">
+                            <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                        </button>
+                    </div>
+
+                </div>
+                <!--This card contains memorial plaque on tree as marker option -->
+                <div class="card h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
+                    <div>
+                        <img class="image w-full h-44 rounded" src="/Natural Burial/static/images/treemarker.jpeg"
+                            alt="This is a wooden board pinned at tree for identification.">
+                    </div>
+                    <div class="container flex justify-between items-center">
+                        <p class="text-base">This is a wooden board pinned at tree for identification. </p>
+                    </div>
+
+                    <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
+                        <input type="radio" name="radio-button">
+                        <button class="icon hover:bg-[#e9ab78] rounded-full ">
+                            <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                        </button>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
-                <input type="radio" name="radio-button">
-                <button class="icon hover:bg-[#e9ab78] rounded-full">
-                    <i class="fa-solid fa-microphone text-3xl microphone"></i>
-                </button>
-            </div>
-        </div>
-        <!--This card contains Stone Engraved as marker option -->
-        <div class="card h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
-            <div>
-                <img class="image rounded w-full h-44" src="/Natural Burial/static/images/stonemarker.jpeg"
-                    alt="This is engraved stone marker for natural burial.">
-            </div>
-            <div class="container flex justify-between items-center">
-                <p class="text-base">
-                    This is engraved stone marker for natural burial.
-                </p>
-            </div>
-            <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
-                <input type="radio" name="radio-button">
-                <button class="icon hover:bg-[#e9ab78] rounded-full">
-                    <i class="fa-solid fa-microphone text-3xl microphone"></i>
-                </button>
-            </div>
+            <!--
+                This is the grid-container containing header of the grid and four different burial methods namely, Tree Pod,
+                Shroud,Ecoffins and Casket.
+        
+                Styled using Grid layout.
+            -->
+            <div class="burial-options grid grid-cols-2 place-items-center gap-5 ">
+                <!-- Heading for the over-all grid container -->
+                <div class="grid-caption col-span-2 text-center ">Burial Methods</div>
+                <!--
+                    Tree pod burial option containing heading,image, radio and microphone button
+                -->
+                <div class="burial-option text-center rounded-lg">
 
-        </div>
-        <!--This card contains wooden memorial plaque as marker option -->
-        <div class="card h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
-            <div>
-                <img class="image rounded w-full h-44" src="/Natural Burial/static/images/woodenplaque.jpeg"
-                    alt="This is a standing wooden plaque for natural burial.">
-            </div>
-            <div class="container flex justify-between items-center">
-                <p class="text-base">This is a standing wooden plaque for natural burial.
-                </p>
-            </div>
+                    <div class="heading">Tree Pod</div>
 
-            <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
-                <input type="radio" name="radio-button">
-                <button class="icon hover:bg-[#e9ab78] rounded-full">
-                    <i class="fa-solid fa-microphone text-3xl microphone"></i>
-                </button>
-            </div>
+                    <hr>
 
-        </div>
-        <!--This card contains memorial plaque on tree as marker option -->
-        <div class="card h-[22rem] w-[18rem] m-4 border-2 border-black p-1 rounded flex flex-col justify-between">
-            <div>
-                <img class="image w-full h-44 rounded" src="/Natural Burial/static/images/treemarker.jpeg"
-                    alt="This is a wooden board pinned at tree for identification.">
-            </div>
-            <div class="container flex justify-between items-center">
-                <p class="text-base">This is a wooden board pinned at tree for identification. </p>
-            </div>
+                    <div class="image w-full p-4 rounded-lg">
+                        <img src="../static/images/treepod.webp" alt="biodegradable burial method that converts body into tree"
+                        class="h-full w-full rounded-lg">
+                    </div>
 
-            <div class="radio h-[3rem] flex flex-row justify-evenly items-center">
-                <input type="radio" name="radio-button">
-                <button class="icon hover:bg-[#e9ab78] rounded-full ">
-                    <i class="fa-solid fa-microphone text-3xl microphone"></i>
-                </button>
-            </div>
+                    <div class="radio flex items-center justify-evenly pl-4">
+                        <input type="radio"  name="burial-option-selected">
 
-        </div>
+                        <button class="hover:bg-[#c3c3c3] w-16 rounded">
+                            <i class="fa-solid fa-microphone microphone"></i>
+                        </button>
+                    </div>
+                </div>
+                <!--
+                    Shroud burial option containing heading,image,radio and microphone button
+                -->
+                <div class="burial-option text-center rounded-lg">
+                    <div class="heading">Shroud</div>
+                    
+                    <hr>
+
+                    <div class="image w-full p-4 rounded-lg">
+                        <img src="../static/images/shroud.jpeg" alt="burial method where body is wrapped by clothes"
+                        class="h-full w-full rounded-lg">
+                    </div>
+                    <div class="radio flex items-center justify-evenly pl-4">
+                        <input type="radio"  name="burial-option-selected">
+
+                        <button class="hover:bg-[#c3c3c3] w-16 rounded">
+                            <i class="fa-solid fa-microphone microphone"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                    Ecoffins burial option containing heading,image,radio and microphone button
+                -->
+                <div class="burial-option text-center rounded-lg">
+                    <div class="heading">Ecoffins</div>
+
+                    <hr>
+                    <div class="image p-4 rounded-lg">
+                        <img src="../static/images/Ecoffins.jpeg" alt="burial method where body is wrapped by clothes"
+                        class="h-full w-full rounded-lg">
+                    </div>
+                    <div class="radio flex items-center justify-evenly pl-4">
+                        <input type="radio"  name="burial-option-selected">
+
+                        <button class="hover:bg-[#c3c3c3] w-16 rounded">
+                            <i class="fa-solid fa-microphone microphone"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                    Casket burial option containing heading,image,radio and microphone button.
+                -->
+                <div class="burial-option text-center rounded-lg">
+                    <div class="heading">Casket</div>
+
+                    <hr>
+                    <div class="image p-4 rounded-lg">
+                        <img src="../static/images/casket.jpeg" alt="burial method where body is wrapped by clothes"
+                        class="h-full w-full rounded-lg">
+                    </div>
+                    <div class="radio flex items-center justify-evenly pl-4">
+                        <input type="radio"  name="burial-option-selected">
+
+                        <button class="hover:bg-[#c3c3c3] w-16 rounded">
+                            <i class="fa-solid fa-microphone microphone"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
+
 </body>
