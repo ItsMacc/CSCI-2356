@@ -5,21 +5,22 @@
 
 /*
 CSS by Sadikshya Oli
-This CSS defines the stly for marker options
+This CSS defines the styles for marker options
 */
 
 /* Style for icons */
-.icon {
+.marker-option .icon {
     width: 2rem;
     line-height: 1rem;
 }
 
-.text-base{
-    font-size: 1.5rem!important;
+/*Style for the text-base in paragraph*/
+.marker-option .text-base {
+    font-size: 1.5rem;
 }
 
 /* Style for radio buttons within elements with class 'radio' */
-.radio input[type="radio"] {
+.marker-option .card .radio input[type="radio"] {
     height: 80%;
     width: 2rem;
 }
