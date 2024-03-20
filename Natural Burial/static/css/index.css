@@ -49,7 +49,8 @@ p {
 
 .card {
     height: 17.5rem;
-    width: 14 rem;
+    width: 14rem;
+
 }
 
 /* #image {
@@ -70,5 +71,37 @@ input[type="radio"] {
 
 .radio-button {
     display: flex;
+    align-items: center;
     justify-content: center;
+    /* margin-bottom: 2; */
+}
+
+.microphone {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*  the radio input field by four times */
+/* .radio>input[type="radio"] {
+    transform: scale(4);
+
+} */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.mic-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
