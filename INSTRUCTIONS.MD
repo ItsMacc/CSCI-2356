@@ -29,3 +29,4 @@ The **TEMPLATES** directory exclusively holds all HTML content for the project.
 * CSS file to check: index.css (inside static -> css)
 * HTML file to check: index.html (inside templates)
 * Images for the website: (inside static -> images)
+TEST
