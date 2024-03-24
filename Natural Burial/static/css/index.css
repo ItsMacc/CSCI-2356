@@ -39,16 +39,19 @@ html{
 
 /* Increasing the size of the icon and radio buttons in card-select div */
 .burial-methods .card-select{
-    input[type="radio"]{
-        width: 19%;
-    }
-
     button{
-        display: flex;
-        align-items: center;
+        width: 50%;
     }
 
     i{
         font-size: 100px;
+    }
+}
+
+.burial-methods .card-select .input-radio{
+    width: 50%;
+
+    input[type="radio"]{
+        width: 40%;
     }
 }
