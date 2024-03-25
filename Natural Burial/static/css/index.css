@@ -1,134 +1,57 @@
-* {
-    font-size: 2.2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+html{
+    font-size: 16px;
 }
 
-body{
-    background-color: rgb(179, 212, 152);
+
+/* CSS by Bhabin Chudal */
+
+.burial-methods .heading{
+    font-size: 4rem;
 }
 
-/* CSS for form box */
-.form-box{
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-
-    background-color: antiquewhite;
-    padding: 2%;
+.burial-methods .card{
+    width: 37rem;
+    height: 47rem;
 }
 
-input{
-    border: 2px solid blue;
-    border-radius: 4px;
+/* Setting the height of each div inside card to achieve proper layout */
+.burial-methods .card{
+    .card-heading{
+        height: fit-content; /* Occupies the exact amount of height required to fit heading */
+        font-size: 4rem;
+    }
+
+    .card-image{
+        height: 60%; /* Occupies 60% of the height of the card */
+        flex-grow: 1; /* Occupy the remaining space if heading is short */
+    }
+
+    .card-select{
+        height: 20%; /* Occupies 20% of the height of the card */
+    }
 }
 
-input[type="number"]::-webkit-inner-spin-button, 
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-}
-
-/*
-    CSS by Sadikshya Oli
-    This CSS defines the styles for marker options
-*/
-
-/* Style for icons */
-.marker-option .icon {
-    width: 2rem;
-    line-height: 1rem;
-}
-
-/*Style for the text-base in paragraph*/
-.marker-option .text-base {
-    font-size: 1.5rem;
-}
-
-/* Style for radio buttons within elements with class 'radio' */
-.marker-option .card .radio input[type="radio"] {
-    height: 80%;
-    width: 2rem;
-}
-
-/*
-    CSS by Bhabin Chudal
-    This CSS defines style for burial options
-*/
-
-.burial-option{
-    height: 25rem;
-    width: 90%;
-    background-color:#f8cd7d;
-}
-
-.burial-option .heading{
-    height: 10%;
-}
-
-.burial-option .image {
+.burial-methods .card .card-image img{
+    /* Making the image fit the card-image div */
     width: 100%;
-    height: 75%;
-}
-
-.burial-option .radio{
-    height: 15%;
-}
-
-.burial-option .radio>input[type="radio"]{
-    transform:scale(5); /*Increasing the size of the radio button*/
-}
-
-/*
-    CSS by Aakarshan Khosla
-    This CSS defines the style for favourite quote/ inscription
-*/
-
-input{
-    border: 2px solid blue; /* Visible border */
-    border-radius: 4px;
-}
-
-/*
-    CSS by Aarav Sen Mehta
-    This CSS defines the style for grave location
-*/
-
-.grave-location .card{
-    height: 20rem;
-}
-
-.grave-location .pic {
-    width: 60%;
-}
-
-.grave-location .pic img {
     height: 100%;
-    width: 100%;
 }
 
-.grave-location .heading{
-    height: fit-content;
+/* Increasing the size of the icon and radio buttons in card-select div */
+.burial-methods .card-select{
+    button{
+        width: 50%;
+    }
+
+    i{
+        font-size: 100px;
+    }
 }
 
-.grave-location .desc {
-    width: 40%;
-    background-color: #def2cc;
-}
+.burial-methods .card-select .input-radio{
+    width: 50%;
 
-/*Sets the height and width for the radio button*/
-.grave-location .radio input[type="radio"] {
-    width: 2rem;
-    height: 2rem;
-}
-
-.grave-location .sub-text {
-    height: 70%;
-}
-
-.grave-location .sub-text *{
-    font-size: 1.2rem;/*Sets the font size for the text that includes the description */
-}
-
-.grave-location .desc .interactive-section {
-    align-items:end; /*Aligns the button and the radio button*/
-    height: 30%;
+    input[type="radio"]{
+        width: 40%;
+    }
 }
