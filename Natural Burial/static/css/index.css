@@ -18,7 +18,7 @@ html{
 .burial-methods .card{
     .card-heading{
         height: fit-content; /* Occupies the exact amount of height required to fit heading */
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .card-image{
@@ -28,6 +28,10 @@ html{
 
     .card-select{
         height: 20%; /* Occupies 20% of the height of the card */
+    }
+
+    .card-description{
+        font-size: 1.5rem;
     }
 }
 
