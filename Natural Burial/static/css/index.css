@@ -1,9 +1,41 @@
 html {
     font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: rgb(179,212,152);
+}
+
+.form-heading{
+    font-size: 4.5rem;
+
+    hr{
+        margin-bottom: 3%;
+    }
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+/* CSS for form box */
+.form-box{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: antiquewhite;
+    padding: 2%;
 }
 
 
 /* CSS by Bhabin Chudal */
+
+.burial-methods{
+    margin-bottom: 10%;
+}
 
 .burial-methods .heading {
     font-size: 4rem;
@@ -12,6 +44,7 @@ html {
 .burial-methods .card {
     width: 37rem;
     height: 47rem;
+    background-color: #f8cd7d;
 }
 
 /* Setting the height of each div inside card to achieve proper layout */
@@ -67,6 +100,10 @@ html {
 
 /* CSS by Sadikshya Oli */
 
+.marker-options{
+    margin-bottom: 10%;
+}
+
 .marker-options .heading {
     font-size: 4rem;
 }
@@ -74,6 +111,7 @@ html {
 .marker-options .card {
     width: 35rem;
     height: 45rem;
+    background-color: #f8cd7d;
 }
 
 .marker-options .card {
@@ -109,5 +147,109 @@ html {
         i {
             font-size: 60px;
         }
+    }
+}
+
+/* CSS by Aarav Sen Mehta */
+
+.grave-locations{
+    margin-bottom: 10%;
+}
+
+.grave-locations .heading{
+    font-size: 4rem;
+}
+
+.grave-locations .card{
+    width: 100%;
+    height: 45rem;
+    background-color: #def2cc;
+}
+
+/* Setting the widths of each div inside card to achieve proper layout*/
+.grave-locations .card{
+    .card-image{
+        width: 60%; /* Occupies 60% of the width of the card */
+        height: 100%;
+    }
+
+    /* Card description further contains 3 sub-divs 
+    so, we will set their heights to achieve the proper layout
+    */
+    .card-description{
+        height: 100%;
+        width: 40%; /* Occupies 40% of the width of the card */
+        font-size: 3.6rem; /* Font size of everything inside description */
+
+        .card-text-heading{
+            height: auto; /* Occupies the exact amount of height required to fit the heading */
+        }
+
+        .card-text{
+            height: 60%; /* Occupies 60% of the height of the card */
+            flex-grow: 1; /*Occupy remaining space if heading is short */
+        }
+
+        .card-select{
+            height: 20%; /*Occupies 20% of the height of the card*/
+        }
+
+    }
+}
+
+.grave-locations .card .card-image img{
+    /* Making the image fit the card-image div */
+    width: 100%;
+    height: 100%;
+}
+
+/* Increasing the size of the icon and radio buttons in card-select div */
+.grave-locations .card-description .card-select{
+    input[type="radio"]{
+        width: 20%;
+    }
+
+    button{
+        display: flex;
+        align-items: center;
+    }
+
+    i{
+        font-size: 100px;
+    }
+}
+
+/*
+    CSS by Aakarshan Khosla
+    This CSS defines the style for favourite quote/ inscription
+*/
+
+input{
+    border: 2px solid blue; /* Visible border */
+    border-radius: 4px;
+}
+
+.inscription{
+    font-size: 4rem;
+
+    margin: 8% 0;
+
+    textarea{
+        border: 2px solid black;
+    }
+}
+
+.general-info{
+    font-size: 4rem;
+    margin-bottom: 10%;
+}
+
+.form-submit{
+    font-size: 4.5rem;
+
+    margin-top: 5%;
+
+    input{
+        padding: 0 2%;
     }
 }
