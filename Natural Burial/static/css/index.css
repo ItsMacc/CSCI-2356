@@ -110,7 +110,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .marker-options .card {
     width: 35rem;
-    height: 45rem;
+    height: 50rem;
     background-color: #f8cd7d;
 }
 
@@ -121,7 +121,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
     .card-text {
         height: 20%;
-        font-size: 2.5rem;
+        font-size: 2.6rem;
     }
 
     .card-select {
@@ -179,7 +179,7 @@ input[type="number"]::-webkit-outer-spin-button {
     .card-description{
         height: 100%;
         width: 40%; /* Occupies 40% of the width of the card */
-        font-size: 3.6rem; /* Font size of everything inside description */
+        font-size: 3.4rem; /* Font size of everything inside description */
 
         .card-text-heading{
             height: auto; /* Occupies the exact amount of height required to fit the heading */
@@ -240,7 +240,7 @@ input{
 }
 
 .general-info{
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 10%;
 }
 
