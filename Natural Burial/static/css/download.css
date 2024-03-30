@@ -1,0 +1,41 @@
+/*
+    The purpose of this CSS file is to style the webpage contents
+    for download.html
+
+    Author: Aakarshan Khosla (A00474829)
+*/
+
+html {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: rgb(179,212,152);
+}
+
+.info-display{
+    font-size: 4rem;
+
+    width: 95%;
+
+    background-color: antiquewhite;
+}
+
+.output{
+    width: 100%;
+    margin-bottom: 1%;
+
+    .title{
+        width: 45%;
+    }
+
+    .data{
+        width: 55%;
+    }
+}
+
+.buttons{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
