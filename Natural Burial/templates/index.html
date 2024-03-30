@@ -1,3 +1,13 @@
+<!--The purpose of this HTML file is to make the layout and display
+    all information in a form that needs to be filled by the client
+
+    Authors:
+            Aakarshan Khosla (A00474829) [group leader]
+            Aarav Sen Mehta (A00467075)
+            Bhabin Chudal (A00464169)
+            Sadikshya Oli (A00457938)
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,8 +30,40 @@
 
 <body>
 
-    <div class="form-box">
-        <form action="getBurialInformation()">
+    <div class="form-box rounded mt-3">
+
+        <div class="form-heading text-center">
+            <h2>
+                NATURAL BURIAL FORM
+            </h2>
+            <hr class="border-gray-500 border-4">
+        </div>
+
+        <br>
+
+        <form action="/getBurialInformation()" id="burial-form" method="post">
+
+            <!--
+                This HTML content contains all the general information
+                that will be entered by the client.
+            -->
+            <div class="general-info grid grid-cols-1 md:grid-cols-2 gap-5 text-center">
+                <label for="name">Name</label>
+                <input type="text" id="name" autofocus autocomplete="off" required>
+
+                <label for="phoneNum">Phone Number</label>
+                <input type="number" inputmode="numeric" id="phoneNum" class="appearance-none" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" autocomplete="off" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date">
+
+                <label for="places"># of Places</label>
+                <input type="number" inputmode="numeric" id="places" class="appearance-none" required>
+
+            </div>
 
             <!--
                 This HTML code contains details (text and images)
@@ -42,7 +84,7 @@
                         </div>
 
                         <div class="card-image">
-                            <img src="../static/images/bm_casket.jpg" alt="This is a brown wooden casket">
+                            <img src="../static/images/bm_casket.jpeg" alt="This is a brown wooden casket">
                         </div>
 
                         <div class="card-select flex">
@@ -52,7 +94,7 @@
 
                             <button type="button"
                                 class="flex justify-center items-center icon hover:bg-[#e9ab78] rounded">
-                                <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                                <i class="fa-solid fa-microphone text-3xl microphone bm_casket_audio"></i>
                             </button>
                         </div>
 
@@ -65,7 +107,7 @@
                         </div>
 
                         <div class="card-image">
-                            <img src="../static/images/bm_Ecoffins.webp"
+                            <img src="../static/images/bm_Ecoffins.jpeg"
                                 alt="This is an eco-friendly brown woven bamboo casket">
                         </div>
 
@@ -74,8 +116,9 @@
                                 <input type="radio" name="burial methods" value="Eco-coffins">
                             </div>
 
-                            <button type="button" class="icon hover:bg-[#e9ab78] rounded">
-                                <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                            <button type="button"
+                                class="flex justify-center items-center icon hover:bg-[#e9ab78] rounded">
+                                <i class="fa-solid fa-microphone text-3xl microphone bm_Ecoffins_audio"></i>
                             </button>
                         </div>
 
@@ -88,7 +131,7 @@
                         </div>
 
                         <div class="card-image">
-                            <img src="../static/images/bm_shroud.jpg"
+                            <img src="../static/images/bm_shroud.jpeg"
                                 alt="This is a burial method where body is wrapped in clothes">
                         </div>
 
@@ -97,8 +140,9 @@
                                 <input type="radio" name="burial methods" value="Shroud">
                             </div>
 
-                            <button type="button" class="icon hover:bg-[#e9ab78] rounded">
-                                <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                            <button type="button"
+                                class="flex justify-center items-center icon hover:bg-[#e9ab78] rounded">
+                                <i class="fa-solid fa-microphone text-3xl microphone bm_shroud_audio"></i>
                             </button>
                         </div>
 
@@ -111,17 +155,18 @@
                         </div>
 
                         <div class="card-image">
-                            <img src="../static/images/bm_treepod.jpg"
+                            <img src="../static/images/bm_treepod.jpeg"
                                 alt="This is a bio-degradable pod with the remains buried to nurture trees">
                         </div>
 
                         <div class="card-select flex">
                             <div class="input-radio flex justify-center">
-                                <input type="radio" name="burial methods" value="Treepod">
+                                <input type="radio" name="burial methods" value="Tree pod">
                             </div>
 
-                            <button type="button" class="icon hover:bg-[#e9ab78] rounded">
-                                <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                            <button type="button"
+                                class="flex justify-center items-center icon hover:bg-[#e9ab78] rounded">
+                                <i class="fa-solid fa-microphone text-3xl microphone bm_treepod_audio"></i>
                             </button>
                         </div>
 
@@ -129,6 +174,142 @@
 
                 </div>
 
+            </div>
+
+            <!--
+                This HTML code contains details (text and images)
+                regarding grave site locations.
+            -->
+            <div class="grave-locations">
+
+                <div class="heading text-center">
+                    GRAVE SITE LOCATIONS
+                </div>
+
+                <div class="layout-grave-locations flex flex-col justify-evenly gap-5">
+
+                    <div class="card border-[2px] border-black flex rounded-lg">
+
+                        <div class="card-image">
+                            <img src="../static/images/location_CampHill.jpg"
+                            alt="Explore the tranquil beauty of Camp Hill, a historic cemetery in Halifax.">
+                        </div>
+
+                        <div class="card-description flex flex-col">
+
+                            <div class="card-text-heading text-center mb-3">
+                                Camp Hill Cemetery
+                                <hr class="border-black border-[3px]">
+                            </div>
+
+                            <div class="card-text p-1">
+                                Explore the tranquil beauty of Camp Hill, a historic cemetery in Halifax.
+                            </div>
+
+                            <div class="card-select flex justify-evenly">
+                                <input type="radio" name="grave locations" 
+                                value="Camp Hill">
+                                <button type="button" class="icon hover:bg-[#e9ab78] rounded">
+                                    <i class="fa-solid fa-microphone text-3xl microphone location_CampHill_audio"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card border-[2px] border-black flex rounded-lg">
+
+                        <div class="card-image">
+                            <img src="../static/images/location_FairviewLawn.jpg"
+                            alt="Discover the historic Fairview Lawn, a resting place for many.">
+                        </div>
+
+                        <div class="card-description flex flex-col">
+
+                            <div class="card-text-heading text-center mb-3">
+                                Farview Lawn Cemetery
+                                <hr class="border-black border-[3px]">
+                            </div>
+
+                            <div class="card-text p-1">
+                                Discover the historic Fairview Lawn, a resting place for many.
+                            </div>
+
+                            <div class="card-select flex justify-evenly">
+                                <input type="radio" name="grave locations"
+                                value="Farview Lawn">
+                                <button type="button" class="icon hover:bg-[#e9ab78] rounded">
+                                    <i class="fa-solid fa-microphone text-3xl microphone location_FairviewLawn_audio"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card border-[2px] border-black flex rounded-lg">
+
+                        <div class="card-image">
+                            <img src="../static/images/location_StPeters.jpg"
+                            alt="A landmark of faith, experience the history of St Peter's Cemetery.">
+                        </div>
+
+                        <div class="card-description flex flex-col">
+
+                            <div class="card-text-heading text-center mb-3">
+                                St. Peter's Cemetery
+                                <hr class="border-black border-[3px]">
+                            </div>
+
+                            <div class="card-text p-1">
+                                A landmark of faith, experience the history of St Peter's Cemetery.
+                            </div>
+
+                            <div class="card-select flex justify-evenly">
+                                <input type="radio" name="grave locations"
+                                value="St. Peter's">
+                                <button type="button" class="icon hover:bg-[#e9ab78] rounded">
+                                    <i class="fa-solid fa-microphone text-3xl microphone location_StPeters_audio"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card border-[2px] border-black flex rounded-lg">
+
+                        <div class="card-image">
+                            <img src="../static/images/location_MtHermon.jpg"
+                            alt="A towering peak in a breathtaking landscape, consider Mt Hermon.">
+                        </div>
+
+                        <div class="card-description flex flex-col">
+
+                            <div class="card-text-heading text-center mb-3">
+                                Mount Hermon Cemetery
+                                <hr class="border-black border-[3px]">
+                            </div>
+
+                            <div class="card-text p-1">
+                                A towering peak in a breathtaking landscape, consider Mt Hermon.
+                            </div>
+
+                            <div class="card-select flex justify-evenly">
+                                <input type="radio" name="grave locations"
+                                value="Mount Hermon">
+                                <button type="button" class="icon hover:bg-[#e9ab78] rounded">
+                                    <i class="fa-solid fa-microphone text-3xl microphone location_MtHermon_audio"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
             </div>
 
             <!--
@@ -146,7 +327,7 @@
                     <div class="card border-[2px] border-black rounded-lg">
 
                         <div class="card-image">
-                            <img src="../static/images/mo_woodencross.jpg"
+                            <img src="../static/images/mo_woodenmemorialcross.jpg"
                                 alt="This is a wooden cross used for memorial purposes.">
                         </div>
 
@@ -157,7 +338,7 @@
                         <div class="card-select flex">
                             <input type="radio" name="marker options" value="Wooden Cross">
                             <button type="button" class="icon hover:bg-[#e9ab78] rounded">
-                                <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                                <i class="fa-solid fa-microphone text-3xl microphone mo_woodenmemorialcross_audio"></i>
                             </button>
                         </div>
 
@@ -177,7 +358,7 @@
                         <div class="card-select flex">
                             <input type="radio" name="marker options" value="Stone Marker">
                             <button type="button" class="icon hover:bg-[#e9ab78] rounded">
-                                <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                                <i class="fa-solid fa-microphone text-3xl microphone mo_stonemarker_audio"></i>
                             </button>
                         </div>
 
@@ -197,7 +378,7 @@
                         <div class="card-select flex">
                             <input type="radio" name="marker options" value="Wooden Plaque">
                             <button type="button" class="icon hover:bg-[#e9ab78] rounded">
-                                <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                                <i class="fa-solid fa-microphone text-3xl microphone mo_woodenplaque_audio"></i>
                             </button>
                         </div>
 
@@ -217,7 +398,7 @@
                         <div class="card-select flex">
                             <input type="radio" name="marker options" value="Tree Marker">
                             <button type="button" class="icon hover:bg-[#e9ab78] rounded">
-                                <i class="fa-solid fa-microphone text-3xl microphone"></i>
+                                <i class="fa-solid fa-microphone text-3xl microphone mo_treemarker_audio"></i>
                             </button>
                         </div>
 
@@ -226,6 +407,29 @@
                 </div>
             </div>
 
+            <!--
+                Inscription/Favourite Quote [Aakarshan Khosla]
+                This HTML content contains a field where user can
+                enter their inscription.
+            -->
+            <div class="inscription grid grid-cols-1 md:grid-cols-2 gap-5 text-center mb-5">
+                <div class="quote flex justify-center items-center">
+                    <label class="mr-2" for="inscription">Favourite Quote: </label>
+                </div>
+                <textarea name="" id="inscription" rows="3"></textarea>
+            </div>
+
+            <!--
+                Submit area
+            -->
+            <div class="form-submit text-center">
+                <input type="submit" class="bg-white border-2 border-[#000000]
+                    rounded p-1 hover:bg-[#f5f5dc] rounded" type="submit">
+                </input>
+            </div>
+
         </form>
+        <script src="../static/css/index.js"></script>
     </div>
 </body>
+</html>
