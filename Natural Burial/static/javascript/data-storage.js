@@ -1,4 +1,5 @@
-/*  The purpose of this JavaScript file is to save the burial information
+/*  
+    The purpose of this JavaScript file is to save the burial information
     entered by the user and put this data in a JSON object and store it
     on local storage.
 
