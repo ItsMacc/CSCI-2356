@@ -3,25 +3,25 @@ html {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body{
-    background-color: rgb(179,212,152);
+body {
+    background-color: rgb(179, 212, 152);
 }
 
-.form-heading{
+.form-heading {
     font-size: 4.5rem;
 
-    hr{
+    hr {
         margin-bottom: 3%;
     }
 }
 
-input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
 
 /* CSS for form box */
-.form-box{
+.form-box {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -33,7 +33,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* CSS by Bhabin Chudal */
 
-.burial-methods{
+.burial-methods {
     margin-bottom: 10%;
 }
 
@@ -100,7 +100,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* CSS by Sadikshya Oli */
 
-.marker-options{
+.marker-options {
     margin-bottom: 10%;
 }
 
@@ -121,7 +121,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
     .card-text {
         height: 20%;
-        font-size: 2.6rem;
+        font-size: 2.1rem;
     }
 
     .card-select {
@@ -136,7 +136,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .marker-options .card-select {
     input[type="radio"] {
-        height: 100%;
+        height: 90%;
         width: 50%;
     }
 
@@ -152,69 +152,76 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* CSS by Aarav Sen Mehta */
 
-.grave-locations{
+.grave-locations {
     margin-bottom: 10%;
 }
 
-.grave-locations .heading{
+.grave-locations .heading {
     font-size: 5rem;
 }
 
-.grave-locations .card{
+.grave-locations .card {
     width: 100%;
     height: 45rem;
     background-color: #def2cc;
 }
 
 /* Setting the widths of each div inside card to achieve proper layout*/
-.grave-locations .card{
-    .card-image{
-        width: 60%; /* Occupies 60% of the width of the card */
+.grave-locations .card {
+    .card-image {
+        width: 60%;
+        /* Occupies 60% of the width of the card */
         height: 100%;
     }
 
     /* Card description further contains 3 sub-divs 
     so, we will set their heights to achieve the proper layout
     */
-    .card-description{
+    .card-description {
         height: 100%;
-        width: 40%; /* Occupies 40% of the width of the card */
-        font-size: 3.4rem; /* Font size of everything inside description */
+        width: 40%;
+        /* Occupies 40% of the width of the card */
+        font-size: 3.4rem;
+        /* Font size of everything inside description */
 
-        .card-text-heading{
-            height: auto; /* Occupies the exact amount of height required to fit the heading */
+        .card-text-heading {
+            height: auto;
+            /* Occupies the exact amount of height required to fit the heading */
         }
 
-        .card-text{
-            height: 60%; /* Occupies 60% of the height of the card */
-            flex-grow: 1; /*Occupy remaining space if heading is short */
+        .card-text {
+            height: 60%;
+            /* Occupies 60% of the height of the card */
+            flex-grow: 1;
+            /*Occupy remaining space if heading is short */
         }
 
-        .card-select{
-            height: 20%; /*Occupies 20% of the height of the card*/
+        .card-select {
+            height: 20%;
+            /*Occupies 20% of the height of the card*/
         }
 
     }
 }
 
-.grave-locations .card .card-image img{
+.grave-locations .card .card-image img {
     /* Making the image fit the card-image div */
     width: 100%;
     height: 100%;
 }
 
 /* Increasing the size of the icon and radio buttons in card-select div */
-.grave-locations .card-description .card-select{
-    input[type="radio"]{
+.grave-locations .card-description .card-select {
+    input[type="radio"] {
         width: 20%;
     }
 
-    button{
+    button {
         display: flex;
         align-items: center;
     }
 
-    i{
+    i {
         font-size: 100px;
     }
 }
@@ -224,32 +231,33 @@ input[type="number"]::-webkit-outer-spin-button {
     This CSS defines the style for favourite quote/ inscription
 */
 
-input{
-    border: 2px solid blue; /* Visible border */
+input {
+    border: 2px solid blue;
+    /* Visible border */
     border-radius: 4px;
 }
 
-.inscription{
+.inscription {
     font-size: 4rem;
 
     margin: 8% 0;
 
-    textarea{
+    textarea {
         border: 2px solid black;
     }
 }
 
-.general-info{
+.general-info {
     font-size: 5rem;
     margin-bottom: 10%;
 }
 
-.form-submit{
+.form-submit {
     font-size: 4.5rem;
 
     margin-top: 10%;
 
-    input{
+    input {
         padding: 0 2%;
     }
 }
