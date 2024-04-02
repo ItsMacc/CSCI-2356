@@ -31,9 +31,6 @@ document.addEventListener("DOMContentLoaded", function (){
 
         saveBurialInformation(burial_data);
         storeData(burial_data);
-
-        //route to download.html
-        window.location.href = "../templates/download.html";
     });
 });
 
