@@ -2,6 +2,7 @@
     The purpose of this JavaScript is to add audios to the respective audio
     icons and play the audio when button is clicked.
     Author:
+            Aakarshan Khosla [group leader] (A00474829)
             Bhabin Chudal (A00464169)
             Aarav Sen Mehta (A00467075)
             Sadikshya Oli (A00457938)
@@ -30,3 +31,17 @@ for (let microphone of microphones) {
         currentAudio = instance_audio;
     });
 }
+
+const submitBtn = document.getElementById("submitBtn");
+
+//Playing an audio to tell the user the form has been submitted
+submitBtn.addEventListener("click", function() {
+    // This ensures no audio can be played at the same time.
+    if (currentAudio){
+        currentAudio.pause();
+    }
+
+    const audio = new Audio("../static/audio/submit.mp3");
+    audio.play();
+    currentAudio = audio;
+});
