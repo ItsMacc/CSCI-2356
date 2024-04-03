@@ -253,15 +253,11 @@ input {
 }
 
 .form-submit {
-    font-size: 5rem;
+    font-size: 4.5rem;
 
     margin-top: 10%;
 
     input {
         padding: 0 2%;
     }
-}
-
-::before{
-    font-size: 80px;
 }
