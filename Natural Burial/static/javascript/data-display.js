@@ -45,5 +45,5 @@ function displayInfo(data){
     other words, if local storage has user input.
 */
 if (data !== null){
-    displayInfo(data);
+    window.onload(displayInfo(data));
 }
