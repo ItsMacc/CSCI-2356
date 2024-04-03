@@ -3,8 +3,7 @@
     entered by the user and put this data in a JSON object and store it
     on local storage.
 
-    Authors:
-            Aakarshan Khosla [group leader] (A00474829)
+    Author: Aakarshan Khosla (A00474829)
 */
 
 
