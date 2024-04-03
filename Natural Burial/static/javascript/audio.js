@@ -1,7 +1,7 @@
 /*
-    The purpose of this JavaScript is to add audios to the respective audio
-    icons and play the audio when button is clicked.
-    Author:
+    The purpose of this JavaScript is to add audios to the respective
+    audio icons and play the audio when button is clicked.
+    Authors:
             Bhabin Chudal (A00464169)
             Aarav Sen Mehta (A00467075)
             Sadikshya Oli (A00457938)

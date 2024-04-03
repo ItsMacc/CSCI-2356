@@ -2,8 +2,8 @@
     The purpose of this JavaScript file is to load the user input
     from local storage and display the information on the webpage.
 
-    Author: 
-            Aakarshan Khosla (A00474829)
+    Authors:
+            Aakarshan Khosla [group leader] (A00474829)
 */
 
 const data = JSON.parse(window.localStorage.getItem("burial-info"));

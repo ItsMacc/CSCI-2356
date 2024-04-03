@@ -1,3 +1,14 @@
+/*
+    The purpose of this css file is to define and set the size
+    of web elements for the webpage.
+
+    Authors:
+            Aakarshan Khosla [group leader] (A00474829)
+            Bhabin Chudal (A00464169)
+            Aarav Sen Mehta (A00467075)
+            Sadikshya Oli (A00457938)
+*/
+
 html {
     font-size: 17px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
