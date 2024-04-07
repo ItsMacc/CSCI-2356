@@ -42,7 +42,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .burial-methods .card {
-    width: 37rem;
+    width: 35rem;
     height: 47rem;
     background-color: #f8cd7d;
 }
@@ -248,7 +248,7 @@ input {
 }
 
 .general-info {
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin-bottom: 10%;
 }
 
