@@ -6,7 +6,7 @@
     Author: Aakarshan Khosla (A00474829)
 */
 
-const SERVER_URL = "https://ugdev.cs.smu.ca/~mapp37/Natural%20Burial/templates/";
+const SERVER_URL = "https://ugdev.cs.smu.ca:3026";
 
 // The JSON data object
 let burial_data = {

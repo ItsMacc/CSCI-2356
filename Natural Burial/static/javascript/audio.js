@@ -36,6 +36,11 @@ const submitBtn = document.getElementById("submitBtn");
 
 //Playing an audio to tell the user the form has been submitted
 submitBtn.addEventListener("click", function() {
+    if(window.localStorage.getItem("burial-info") === null){
+        return -1;
+    }
+    
+    console.log("button has been clicked");
     // This ensures no audio can be played at the same time.
     if (currentAudio){
         currentAudio.pause();
