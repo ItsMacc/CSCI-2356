@@ -20,7 +20,7 @@ let __dirName = path.dirname(__filename);
 //------------------------------MIDDLEWARES------------------------------
 
 app.use(express.static(path.join(__dirName, "../../../templates")));
-app.use("/static",express.static(path.join(__dirName, "../../../static")));
+app.use("/static", express.static(path.join(__dirName, "../../../static")));
 
 app.use(express.urlencoded({ extended: true }));
 
@@ -39,6 +39,7 @@ app.use((req, res, next) => {
 
 //------------------------------ROUTES------------------------------
 
+//The JSON data object
 let burial_data = {
     general_info: {
         name: "Your Name",
@@ -53,23 +54,43 @@ let burial_data = {
     inscription: "Your favourite text here"
 }
 
-app.get("/", (req, res)=>{
+/*
+    The purpose of this function is to respond to a GET request for homepage.
+ */
+app.get("/", (req, res) => {
     res.sendFile("index.html");
 })
 
-app.get("/burialInfoEndpoint", (req, res)=>{
+/*
+    The purpose of this function is to respond to a GET request for 
+    endpoint: burialInfoEndpoint
+*/
+app.get("/burialInfoEndpoint", (req, res) => {
     res.status(200).send(burial_data);
 })
 
-app.post("/saveBurialInfo", (req, res)=>{
+/*
+    The purpose of this function is to respond to a POST request for
+    endpoint: saveBurialInfo
+*/
+app.post("/saveBurialInfo", (req, res) => {
     res.status(200);
 })
 
-app.post("/burialInfoEndpoint", (req, res)=>{
+/*
+    The purpose of this function is to respond to a POST request for
+    endpoint: burialInfoEndpoint
+*/
+app.post("/burialInfoEndpoint", (req, res) => {
     burial_data = req.body;
     res.status(200).send(burial_data);
 })
 
-app.listen(port, ()=>{
+
+/*
+    The purpose of this function is to produce a message on the Node.js console,
+    indicating the server has begun to listen for clients on a port.
+*/
+app.listen(port, () => {
     console.log("server is listening on port " + port);
 })
