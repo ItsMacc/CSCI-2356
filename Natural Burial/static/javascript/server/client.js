@@ -6,11 +6,10 @@
     Author: Aakarshan Khosla (A00474829)
 */
 
-const SERVER_URL = "http://localhost:3026";
-let uploaded = false;
+const SERVER_URL = "https://ugdev.cs.smu.ca/~mapp37/Natural%20Burial/templates/";
 
 // The JSON data object
-const burial_data = {
+let burial_data = {
     general_info: {
         name: "Your Name",
         number: 1e10,
@@ -24,66 +23,89 @@ const burial_data = {
     inscription: "Your favourite text here"
 }
 
-
-function post() {
-    /*
-        Save values of user input in burial_data and 
-        store burial_data in local storage
-    */
-    saveBurialInformation(burial_data);
-    storeData(burial_data);
-
-    let obj = burial_data;
-    $.post(SERVER_URL +"/burialInfoEndpoint", obj, successFn).fail(errorFn);
-    uploaded = true;
-}
-
 /**
- * A function to populate the webpage with data from local storage
+ * A function that will upload the data contained in local
+ * storage to the server
  */
-function displayData(){
-    $.get("/burialInfoEndpoint");
+function post() {
     let data = JSON.parse(window.localStorage.getItem("burial-info"));
 
-    if(data === null && !uploaded) {
-        data = burial_data;
+    // If there is something in local storage, set the value of 
+    // burial_data to that value and use it instead.
+    if(data !== null){
+        burial_data = data;
     }
 
-    //general info
-    const name = document.getElementById("name");
-    const phoneNum = document.getElementById("phoneNum");
-    const email = document.getElementById("email");
-    const DOB = document.getElementById("DOB");
-    const places = document.getElementById("places");
+    // attempt to POST obj to endpoint 
+    // if (the middleware for this endpoint ran without error)
+    //   call successFn
+    // else
+    //   call errorFn
+    let obj = burial_data;
+    $.post(SERVER_URL + "/burialInfoEndpoint", obj, successFn).fail(errorFn);
+}
 
-    //other inputs
-    const burial_method = document.querySelector(`input[value="${data.burial_method}"]`);
-    const grave_location = document.querySelector(`input[value="${data.grave_location}"]`);
-    const marker_option = document.querySelector(`input[value="${data.marker_option}"]`);
-    const inscription = document.getElementById("inscription");
+// Add an event listener to the form submit event
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("#burial-form").addEventListener("submit", function(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+    });
+});
 
-    //Displaying values on webpage
-    name.value = data.general_info.name;
-    phoneNum.value = data.general_info.number;
-    email.value = data.general_info.email;
-    DOB.value = data.general_info.DOB;
-    places.value = data.general_info.places;
-    burial_method.checked = true;
-    grave_location.checked = true;
-    marker_option.checked = true;
-    inscription.value = data.inscription;
-
-    window.scrollTo(0,0);
+/**
+ * A function that will download the data from the
+ * server and store it into local storage. Then, it displays
+ * the data in local storage and populates the webpage.
+ */
+function get(){
+    // attempt to GET a JSON object from endpoint http://ugdev.cs.smu.ca:3026/myGet
+    // if (the middleware for this endpoint ran without error)
+    //   call successShow
+    // else
+    //   call errorFn
+    $.get(SERVER_URL + "/burialInfoEndpoint", successShow).fail(errorFn);
+    displayInfo();
 }
 
 //------------------------------HELPER METHODS------------------------------
 
+/**
+ * The purpose of this function is to log the JSON object received
+ * from the server.
+ * 
+ * @param {returnedData} contains the JSON object returned by the server
+ */
 function successFn(returnedData) {
     console.log("success",returnedData);
 }
-  
+
+/**
+ * The purpose of this function is to log the error.
+ * 
+ * @param {err} the error object returned by the server
+ */
 function errorFn(err) {
     console.log(err.responseText);
+}
+
+/**
+ * The purpose of this function is to store returned data locally
+ * and populate the webpage with data from the local storage.
+ * 
+ * @param {returnedData} contains the JSON object returned by the server
+ */
+function successShow(returnedData) {
+    storeData(returnedData);
+    displayInfo();
+}
+
+/**
+ * A function that when called, will save burial information to local
+ * storage
+ */
+function saveData(){
+    saveBurialInformation(burial_data);
 }
 
 /**
@@ -98,6 +120,9 @@ function saveBurialInformation(data){
     saveGraveLocation(data);
     saveMarkerOption(data);
     saveInscription(data);
+
+    //Save data on local storage
+    storeData(data); 
 }
 
 /**
@@ -175,4 +200,42 @@ function storeData(burial_data){
     else{
         alert("Not enough local storage!");
     }
+}
+
+/**
+ * A function to display the user data on the webpage
+ * 
+ * @param {data} the data that contains the burial information.
+ */
+function displayInfo(){
+    let data = JSON.parse(window.localStorage.getItem("burial-info"));
+
+    // If there is no data in local storage, use default information
+    if(data === null) {
+        data = burial_data;
+    }
+
+    //general info
+    const name = document.getElementById("name");
+    const phoneNum = document.getElementById("phoneNum");
+    const email = document.getElementById("email");
+    const DOB = document.getElementById("DOB");
+    const places = document.getElementById("places");
+
+    //other inputs
+    const burial_method = document.querySelector(`input[value="${data.burial_method}"]`);
+    const grave_location = document.querySelector(`input[value="${data.grave_location}"]`);
+    const marker_option = document.querySelector(`input[value="${data.marker_option}"]`);
+    const inscription = document.getElementById("inscription");
+
+    //Displaying values on webpage
+    name.value = data.general_info.name;
+    phoneNum.value = data.general_info.number;
+    email.value = data.general_info.email;
+    DOB.value = data.general_info.DOB;
+    places.value = data.general_info.places;
+    burial_method.checked = true;
+    grave_location.checked = true;
+    marker_option.checked = true;
+    inscription.value = data.inscription;
 }

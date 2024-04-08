@@ -39,11 +39,37 @@ app.use((req, res, next) => {
 
 //------------------------------ROUTES------------------------------
 
+let burial_data = {
+    general_info: {
+        name: "Your Name",
+        number: 1e10,
+        email: "youremail@gmail.com",
+        DOB: "2000-01-01",
+        places: 1
+    },
+    burial_method: "Casket",
+    marker_option: "Wooden Cross",
+    grave_location: "Camp Hill",
+    inscription: "Your favourite text here"
+}
+
 app.get("/", (req, res)=>{
     res.sendFile("index.html");
 })
 
+app.get("/burialInfoEndpoint", (req, res)=>{
+    res.status(200).send(burial_data);
+})
+
+app.post("/saveBurialInfo", (req, res)=>{
+    res.status(200);
+})
+
+app.post("/burialInfoEndpoint", (req, res)=>{
+    burial_data = req.body;
+    res.status(200).send(burial_data);
+})
 
 app.listen(port, ()=>{
-    console.log("server is listening on port "+port);
+    console.log("server is listening on port " + port);
 })
