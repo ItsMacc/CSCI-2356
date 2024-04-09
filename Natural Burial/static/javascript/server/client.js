@@ -3,7 +3,11 @@
     entered by the user and put this data in a JSON object and store it
     on local storage.
 
-    Author: Aakarshan Khosla (A00474829)
+    Authors: 
+            Aakarshan Khosla (A00474829)
+            Aarav Sen Mehta (A00467075)
+            Bhabin Chudal (A00464169)
+            Sadikshya Oli (A00457938)
 */
 
 const SERVER_URL = "https://ugdev.cs.smu.ca:3026";
