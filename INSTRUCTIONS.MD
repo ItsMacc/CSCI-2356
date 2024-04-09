@@ -19,13 +19,14 @@ The **STATIC** directory further consists of the following subdirectories:
 
 1. **css**: This directory contains all CSS files utilized in the project.
 2. **images**: All images relevant to the project are stored in this directory.
-3. **js** (Not applicable in the current version): This directory is intended for JavaScript files associated with the project.
+3. **javascript**: This directory is intended for JavaScript files associated with the project.
+4. **audio**: All audio files relevant to the project are stored in this directory.
+5. **server**: This directory contains the client and server side code.
 
 ### Templates
 
 The **TEMPLATES** directory exclusively holds all HTML content for the project.
 
-# PHASE 1
-* CSS file to check: index.css (inside static -> css)
+# PHASE 3
 * HTML file to check: index.html (inside templates)
-* Images for the website: (inside static -> images)
+* Javascript files to check: index.js, client.js (inside server)
