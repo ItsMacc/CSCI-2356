@@ -1,7 +1,7 @@
 /*
     The purpose of this JavaScript is to add audios to the respective audio
     icons and play the audio when button is clicked.
-    Author:
+    Authors:
             Aakarshan Khosla [group leader] (A00474829)
             Bhabin Chudal (A00464169)
             Aarav Sen Mehta (A00467075)
@@ -14,7 +14,7 @@ let microphones = document.querySelectorAll(".microphone");
 let currentAudio = null;
 
 
- // Iterates through each microphone that gets triggered onclick and plays audio.
+// Iterates through each microphone that gets triggered onclick and plays audio.
 for (let microphone of microphones) {
     microphone.addEventListener("click", () => {
         let audio_class_name = microphone.classList[4];
@@ -32,12 +32,12 @@ for (let microphone of microphones) {
     });
 }
 
-const submitBtn = document.getElementById("submitBtn");
+const form = document.getElementById("burial-form");
 
 //Playing an audio to tell the user the form has been submitted
-submitBtn.addEventListener("click", function() {
+form.addEventListener("submit", function (event) {
     // This ensures no audio can be played at the same time.
-    if (currentAudio){
+    if (currentAudio) {
         currentAudio.pause();
     }
 
